@@ -1,0 +1,209 @@
+/* =========================================================
+   Blueprint Resumes — basic stylesheet
+   Colours: black, blue, white only
+   ========================================================= */
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #003366;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #0055aa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #003366;
+  margin: 30px 0;
+}
+
+/* -----------------------------------------------------------
+   Header / Navigation
+   ----------------------------------------------------------- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #003366;
+  padding: 15px 30px;
+}
+
+header nav a {
+  color: #ffffff;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #99ccff;
+  text-decoration: underline;
+}
+
+/* -----------------------------------------------------------
+   Buttons
+   ----------------------------------------------------------- */
+button,
+.blue-button,
+.grey-button {
+  background-color: #0055aa;
+  color: #ffffff;
+  border: 1px solid #003366;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover,
+.blue-button:hover {
+  background-color: #003366;
+}
+
+.blue-button a {
+  color: #ffffff;
+}
+
+.grey-button {
+  background-color: #ffffff;
+  color: #003366;
+  border: 1px solid #003366;
+}
+
+.grey-button:hover {
+  background-color: #003366;
+  color: #ffffff;
+}
+
+/* -----------------------------------------------------------
+   Hero section (index.html)
+   ----------------------------------------------------------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 30px;
+  background-color: #f2f2f2;
+}
+
+.hero h1 {
+  color: #003366;
+}
+
+.hero-img {
+  border: 3px solid #003366;
+}
+
+/* -----------------------------------------------------------
+   Main content
+   ----------------------------------------------------------- */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* -----------------------------------------------------------
+   Tables
+   ----------------------------------------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #003366;
+}
+
+th {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 10px;
+}
+
+td {
+  padding: 15px;
+  vertical-align: top;
+  text-align: center;
+}
+
+/* -----------------------------------------------------------
+   FAQ (details/summary)
+   ----------------------------------------------------------- */
+summary {
+  font-weight: bold;
+  color: #003366;
+  cursor: pointer;
+}
+
+details[open] summary {
+  color: #0055aa;
+}
+
+/* -----------------------------------------------------------
+   Testimonials / blockquotes
+   ----------------------------------------------------------- */
+blockquote {
+  color: #000000;
+  font-style: italic;
+  border-left: 3px solid #003366;
+  padding-left: 15px;
+  margin: 10px 0;
+}
+
+/* -----------------------------------------------------------
+   Footer
+   ----------------------------------------------------------- */
+footer {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #99ccff;
+}
+
+footer table, footer th, footer td {
+  border: none;
+}
+
+footer p {
+  margin: 8px 0;
+}
+
+/* -----------------------------------------------------------
+   Responsive
+   ----------------------------------------------------------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+}
