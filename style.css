@@ -304,46 +304,6 @@ footer img {
 
 }
 
-/*--------------Responsive-------------------------*/
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
- 
-  .hero {
-    flex-direction: column;
-  }
- 
-  .service-container table,
-  .service-container,
-  .service-container tr {
-    display: block;
-    width: 100%;
-  }
- 
-  .service-card {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-  }
- 
-  .service-card:hover {
-    transform: none;
-  }
-}
- 
-@media (max-width: 480px) {
-  .service-card {
-    padding: 20px 15px;
-  }
- 
-  .service-card img {
-    width: 80px;
-    height: 80px;
-  }
-}
- 
 
 /*=====FAQ page=====*/
 .border {
@@ -365,5 +325,44 @@ summary {
  
 details[open] summary {
   color: #0055aa;
+}
+ 
+/*--------------Responsive----------------------*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+ 
+  nav{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  nav a{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+ 
+  
+ 
+@media (max-width: 768px) {
+  .services-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .service-card,
+  .about-servicescard{
+    width: 90%;
+    max-width: 400px;
+  }
 }
  
