@@ -40,6 +40,13 @@ h1{
 
 }
 
+.italic{
+    font-family: Arial, Verdana, sans-serif;
+    color: grey;
+    font-size: 15px;
+    font-style: italic;
+}
+
 h3{
     font-family: 'Times New Roman', Times, serif;
     color: black;
@@ -235,13 +242,11 @@ footer img {
 
 /*====about us page====*/
 .about-hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 40px 30px;
-    background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 
@@ -261,3 +266,69 @@ footer img {
     box-shadow: 0 4px 6px rgba(21, 12, 194, 0.905);
     gap: 20px;
 }
+
+
+
+/*--------------Responsive-------------------------*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ 
+  .hero {
+    flex-direction: column;
+  }
+ 
+  .service-container table,
+  .service-container,
+  .service-container tr {
+    display: block;
+    width: 100%;
+  }
+ 
+  .service-card {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+ 
+  .service-card:hover {
+    transform: none;
+  }
+}
+ 
+@media (max-width: 480px) {
+  .service-card {
+    padding: 20px 15px;
+  }
+ 
+  .service-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+ 
+
+/*=====FAQ page=====*/
+.border {
+  border: 1px solid #003366;
+  border-radius: 5px;
+  border-width: 2px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 40%;
+
+}
+
+summary {
+  font-weight: bold;
+  color: #003366;
+  cursor: pointer;
+  text-align: center;
+}
+ 
+details[open] summary {
+  color: #0055aa;
+}
+ 
