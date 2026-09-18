@@ -201,3 +201,7 @@ Changes Made
 * Created an External Stylesheet.
 * Set default styles for heading styles.
 * Applied typography styles.
+---------------------------------------
+Refernces
+W3Schools (2026) CSS Home. Available at: https://www.w3schools.com/css/default.asp (Accessed: 15 September 2026).
+Bro Code (2021) CSS Tutorial for beginners. YouTube. Available at: https://www.youtube.com/watch?v=xv-bBxaa7WU&list=PLZPZq0r_RZOONc3kkuRmBOlj67YAG6jqo (Accessed: 15 September 2026).
