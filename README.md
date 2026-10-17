@@ -68,7 +68,15 @@ The page helps users find important information without having to contact the bu
 
 7. Contact
 
-The Contact page provides users with information on how to get in contact with Blueprint Resumes.
+The Contact Us page provides users with contact details and a way to compose a message.
+
+It includes:
+
+* A message area with Email Address, Phone Number, Subject, and Message labels
+* A Send Message button
+* Contact details, including phone number, email address, location, and business hours
+* An Instagram icon
+* Navigation links and footer quick links to the other website pages
 
 ------------------
 
@@ -148,7 +156,7 @@ Blueprint-Resumes/
 ├── pricing.html
 ├── testimonials.html
 ├── faq.html
-├── contact.html
+├── contact us.html
 │
 ├── style.css
 │
@@ -201,3 +209,8 @@ Changes Made
 * Created an External Stylesheet.
 * Set default styles for heading styles.
 * Applied typography styles.
+
+3. Contact Us page
+* Added a message area with Email Address, Phone Number, Subject, and Message labels, plus a Send Message button.
+* Added the business phone numbers, email address, location, and operating hours.
+* Added an Instagram icon and footer quick links.

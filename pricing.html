@@ -12,9 +12,10 @@
   <header>
     
 <!--Navigation bar-->
-    <nav class="navbar-container" >
+    <nav class="navbar" >
    <img src="Images\LOGO.jpg" alt="Blueprint Resumes" width="120">
     
+   <span class="nav-links">
         <a href="index.html"> Home</a>
         <a href="about us.html"> About Us</a>
         <a href="services.html"> Services</a>
@@ -22,111 +23,122 @@
         <a href="testimonials.html">Testimonials</a>
         <a href="faq.html">FAQ</a>
         <a href="contact us.html">Contact Us</a>
-       <button><a href= "contact us.html"> Get a Quote</a></button>
-        </nav>
+       <button class="submit-button"><a href= "contact us.html"> Get a Quote</a></button>
+        </span>
+      </nav>
         </header>
-      
+      <br><br><br>
         <main>
-            <h1 align="center"><b>Our Pricing</b></h1>
+           <br><br>
+            <h1 align="center" class="h1"><b>Our Pricing</b></h1>
             <p align="center">Choose the service or package that best suits your career needs.</p>
-
-            <h2 align="center"><b>Indivial Services</b></h2>
-
+          <br><br>
+            <h2 align="center" class="h2" ><b>Indivial Services</b></h2>
+         <br><br>
         
 <!--service cards-->
-             <table border="1" cellspacing="20">
-                <tr>
-                   
-                    <td>
-                      <div class="service-card">
-            <img src="Images\curriculum-vitae.png" width="100" height="100" align="center"/>
+        
+         <section class="service-container">
+              <div class="service-card">
+             <img src="Images\curriculum-vitae.png" width="50" height="50" align="center"/>
+             <br><br>
             <h3> PROFESSIONAL CV</h3>
+            <br>
             <h3 style="color:blue" align="center"><b>R250</b></h3>
+            <br>
             <p>A professionally written CV tailored<br> to your experience and<br> career goals.</p>
-            <button class="grey button">Get Started</button>
+            <br>
+            <button class="grey-button">Get Started</button>
           </div>
             
-            </td>
+        
                
-               
-                <td>
                   <div class="service-card">
-                <img src="Images\resume.png" width="100" height="100" align="center">
+                <img src="Images\resume.png" width="50" height="50" align="center">
+                <br><br>
               <h3> CV EDITING</h3>
+              <br>
               <h3 style="color:blue" align="center"><b>R100</b></h3>
+              <br>
               <p>Improve the wording, structure<br> and presentation of your<br> existing CV.</p>
-              <button class="grey button">Get Started</button>
+              <br>
+              <button class="grey-button">Get Started</button>
             </div>
-                </td>
+    
 
-                <td>
-              
-                  <div class="service-card">
-                <img src="Images\letter.png" width="100" height="100">
+                <div class="service-card">
+                <img src="Images\letter.png" width="50" height="50">
+                <br><br>
                 <h3>COVER LETTER</h3>
+                <br>
                 <h3 style="color:blue" align="center"><b>R120</b></h3>
+                <br>
                 <p>A personlised cover letter<br> designed to complement your CV.</p>
-               <button class="grey button">Get Started</button>
+                <br>
+               <button class="grey-button">Get Started</button>
                 </div>
-              
-                </td>
-                </tr>
-            
-                </table>
-      <hr>
+      </section>
+    
+  
+       <h2 align="center" class="h2"><b>Package Options</b></h2>
 
-       <h2 align="center"><b>Package Options</b></h2>
-          <table class="border" cellpadding="50" border="1" width="100%" align="center">
-          <tr>
-      <th class="h2">Basic</th>
-      <th class="h2">Standard</th>
-      <th class="h2">Premium</th>
-    </tr>
-    <tr >
-      <td class="border">
+       <br><br>
+       
       
-       <h3 style="color:blue" align="center"><b>R250</b></h3> 
-        <p>- Professional CV<br>
+      
+      <section class="service-container">
+        <div class="service-card">
+          <h2 class="heading">Basic </h2>
+          <br><br>
+       <h3 style="color:blue" align="center" class="price"><b>R250</b></h3> 
+       <br>
+        <p class="par">- Professional CV<br>
         - Cover Letter<br>
         - 3-5 Business Days<br></p>
-        <button class="grey button">Choose Plan</button>
+        <br><br>
+        <button class="grey-button">Choose Plan</button>
+        </div>
         
-        </td>
-
-        <td class="border">
-          
-            <h3 style="color:blue" align="center"><b>R400</b></h3>
-       <p>- CV Editing<br>
+        <div class="service-card">
+          <h2 class="heading">Standard </h2>
+          <br><br>
+          <h3 style="color:blue" align="center" class="price"><b>R400</b></h3>
+          <br>
+        <p class="par">- CV Editing<br>
         - Cover Letter<br>
         - 3-5 Business Days<br></p>
-        <button class="grey button">Choose Plan</button>
-        
-      </td>
-
-      <td class="border">
-        
-        <h3 style="color:blue" align="center"><b>R600</b></h3>
-        <p>- Professional CV<br>
+        <br><br>
+        <button class="grey-button">Choose Plan</button>
+        </div>
+      
+        <div class="service-card">
+        <h2 class="heading">Premium</h2>
+        <br><br>
+        <h3 style="color:blue" align="center" class="price"><b>R600</b></h3>
+        <br>
+        <p class="par">- Professional CV<br>
         - CV Editing<br>
         - Cover Letter<br>
         - 5-7 Business Days<br></p>
-        <button class="grey button">Choose Plan</button>
-        
-      </td>
-    </tr>
-  </table>
-<hr>
-  <p class="h3"><b>Need something custom?</b><br><b>Contact us for a personlised quote.</b><a href="contact us.html"><button>Request a Quote</button></a></p>
-
+        <br><br>
+        <button class="submit-button">Choose Plan</button>
+        </div>
+      </section>
+     
+   <div class="hero-faq">
+  <p class="p"><b>Need something custom?</b><br><b>Contact us for a personlised quote.</b> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="contact us.html"><button class="grey-button">Request a Quote</button></a></p>
+   </div>
         </main>
 
 
 
            
- <footer>
-    <hr>
-    <img src="Images\LOGO.jpg" width="100" height="60"/>
-<table border="1">
+  <footer>
+
+    <img src="Images\LOGO.jpg" width="210" height="80" align="left"/>
+    <table border="1">
     <p>
       <b>Quick Links:</b>
       <a href="index.html">Home</a> |
@@ -136,13 +148,18 @@
       <a href="testimonials.html">Testimonials</a> |
       <a href="faq.html">FAQ</a> |
       <a href="contact us.html">Contact</a>
+      <br><br>
     </p>
     <p><b>Contact Info:</b> 083 285 7668/ 081 724 5112 | nellythabede@gmail.com | Midrand, South Africa</p>
-    <img class="footer-img" src="Images\instagram.png" width="25" height="25"/>
+    <br>
+    <p><b>Follow us:</b></p>
+    <img class="footer-img" src="Images\instagram.png" width="25" height="25"/>&nbsp;&nbsp;
     <img class="footer-img" src="Images\social.png" width="25" height="25"/>
+    <br>
     <hr>
-    <p>&copy; 2026 Blueprint Resumes. All rights reserved.</p>
+    <b><p align="center">&copy; 2026 Blueprint Resumes. All rights reserved.</p></b>
     </table>
   </footer>
+  </html>
         
         
