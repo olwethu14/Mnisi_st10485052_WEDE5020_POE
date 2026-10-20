@@ -1,24 +1,5 @@
 
-:root {
-  --cream: #fffbf7;
-  --beige: #f4ece2;
-  --white: #ffffff;
-  --ink: #0b1b2d;
-  --text: #4b5563;
-  --muted: #6b7280;
-  --blue: #1478b5;
-  --blue-dark: #0a5f9e;
-  --blue-light: #5bb3ea;
-  --blue-grad: linear-gradient(135deg, #2183c4 0%, #0a62a5 100%);
-  --navy-grad: linear-gradient(135deg, #00101f 0%, #001a33 100%);
-  --border: #ece6dd;
-  --radius: 20px;
-  --radius-sm: 12px;
-  --shadow: 0 10px 30px rgba(11, 27, 45, 0.07);
-  --shadow-hover: 0 18px 40px rgba(11, 27, 45, 0.13);
-  --glow: 0 10px 24px rgba(20, 120, 181, 0.30);
-  --max-width: 1200px;
-}
+
 
 /*-------Footer-----*/
 footer {
@@ -147,20 +128,6 @@ footer hr {
 }
 
 /*----buttons----*/
-.blue-button {
-    background-color: #1687c4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 20px;
-    font-size: 13px;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(22, 135, 196, 0.2);
-}
-
-.blue-button:hover {
-    background-color: #086da5;
-}
 
 .grey-button{
     background-color: rgb(163, 163, 163);
@@ -446,6 +413,7 @@ body{
 .p{
     font-style: italic;
     font-size: 18px;
+    margin-left: 10px;
 
 
 }
@@ -687,18 +655,27 @@ body{
 .pic{
      position: absolute;
     top: 120px;
-    right: 150px;
+    right: 150px;}
+
+
+.gallery-section{
+    padding: 50px 8%;
 }
 
+.gallery-container{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(244, 244, 229) ;
+    height: 420px;
+    margin-bottom: 200px;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 10px;
 
-
-
-
-
-
-
-
-
+}
 
 
 

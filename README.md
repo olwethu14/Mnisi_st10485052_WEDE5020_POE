@@ -217,7 +217,7 @@ Changes Made
 * Added an Instagram icon and footer quick links.
 =======
 ---------------------------------------
-Refernces
+References
 W3Schools (2026) CSS Home. Available at: https://www.w3schools.com/css/default.asp (Accessed: 15 September 2026).
 Bro Code (2021) CSS Tutorial for beginners. YouTube. Available at: https://www.youtube.com/watch?v=xv-bBxaa7WU&list=PLZPZq0r_RZOONc3kkuRmBOlj67YAG6jqo (Accessed: 15 September 2026).
 >>>>>>> f5fe50bb9c022c14db3d1eb09cd602e6efbb92f1
