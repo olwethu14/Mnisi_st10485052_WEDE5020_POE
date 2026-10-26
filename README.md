@@ -209,15 +209,10 @@ Changes Made
 * Created an External Stylesheet.
 * Set default styles for heading styles.
 * Applied typography styles.
-<<<<<<< HEAD
 
-3. Contact Us page
-* Added a message area with Email Address, Phone Number, Subject, and Message labels, plus a Send Message button.
-* Added the business phone numbers, email address, location, and operating hours.
-* Added an Instagram icon and footer quick links.
-=======
 ---------------------------------------
 References
 W3Schools (2026) CSS Home. Available at: https://www.w3schools.com/css/default.asp (Accessed: 15 September 2026).
 Bro Code (2021) CSS Tutorial for beginners. YouTube. Available at: https://www.youtube.com/watch?v=xv-bBxaa7WU&list=PLZPZq0r_RZOONc3kkuRmBOlj67YAG6jqo (Accessed: 15 September 2026).
 >>>>>>> f5fe50bb9c022c14db3d1eb09cd602e6efbb92f1
+

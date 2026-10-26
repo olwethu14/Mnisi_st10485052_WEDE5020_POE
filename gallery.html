@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
      <link rel = 'stylesheet' href="style.css">
+     <script src="validation.js" defer></script>
 </head>
 
 <header>
@@ -27,99 +28,101 @@
         </span>
       </nav>
         </header>
+
 <br><br><br>
+           
+
  <main>
-        <section class="hero">
-            <div class="hero-content">
-              <h3>Our Gallery</h3>
-              <br>
-              <h1><b>Professional Designs. <br>
-                Real Opportunities.</b></h1>
-              <br>
-              <p> Explore a selection of our resume designs, from <br>chronoligical, functional, hybrid and creative CV types.</p>
-
-            </div>
-            <div class="pic">
-              <img src="Images\curriculum-vitae gallery.png" width="300" height="200">
-            </div>
-        </section>
+  <br><br><br>
+           
+      
+            <div>
+           <h1 class="h1">Our Gallery</h1>
+           <p class="p" align="center">Browse professional resume designs tailored to your style and career goals.</p>
+           </div>
         
-        <div>
-            
-                <img src="Images\Actor cv.png" alt= "Resume design for an actor" width="350" height="300">
+           <br><br><br>
+
+           <div>
+              <form id="search-form" class="search">
+              <input type="text" id="searchInput" placeholder="Search for a template..." autocomplete="off">
+              <button type="submit">Search</button>
+
+              <div class="result-box" id="resultBox">
+        <ul id="templateList">
+            <li>Creative CV</li>
+            <li>Professional CV</li>
+            <li>Functional CV</li>
+            <li>Interior Designer</li>
+            <li>Actor</li>
+            <li>Developer</li>
+            <li>Manager</li>
+            <li>Architect</li>
+            <li>Fashion Designer</li>
+            <li>Cover Letter</li>
+        </ul>
+
+        <p id="noResults">No templates found.</p>
+    </div>
+              </form>
+              
+              
+             </div>
             
 
-            
-                <img src="Images\cover letter 1.png" alt= "Professional cover letter" width="350" height="300">
-            
+             
+          <div class="full-img" id="fullImgBox">
+          <img src="Images\Actor cv.png" alt= "Resume design for an actor" height="590" id="fullImg">
+          <span onclick="closeFullImg()">X</span>
+          </div>
 
-            
-                <img src="Images\software dev cv.png" alt= "Professional software developer resume" width="350" height="300">
-            
-            
+      
 
+               <div class="gallery-item">
+                <img src="Images\Actor cv.png" alt= "Creative resume design for a actor" onclick="openFullImg(this.src)">
+            
+                <img src="Images\cover letter 1.png" alt= "Professional cover letter"  onclick="openFullImg(this.src)">
+              
+                <img src="Images\software dev cv.png" alt= "Professional/Functional software developer resume" onclick="openFullImg(this.src)">
     
+                <img src="Images\fashion designer cv.png" alt= "Creative fashion designer resume"  onclick="openFullImg(this.src)">
+  
+                <img src="Images\graphic cv.png" alt= "Graphic designer resume"  onclick="openFullImg(this.src)">
+
+                <img src="Images\cover letter 2.png" alt= "Professional cover letter" onclick="openFullImg(this.src)">
+      
+                <img src="Images\cv template (1).png" alt= "Interior designer creative resume "  onclick="openFullImg(this.src)">
+              
+                <img src="Images\cv template (2).png" alt= "fashion designer creative resume"  onclick="openFullImg(this.src)">
+  
+                <img src="Images\cv template (3).png" alt= "Resume design for a social media manager"  onclick="openFullImg(this.src)">
+      
+                <img src="Images\cv template (4).png" alt= "Resume design for an architect"  onclick="openFullImg(this.src)">
             
-                <img src="Images\fashion designer cv.png" alt= "Creative fashion designer resume" width="350" height="300">
-            
+                <img src="Images\BR poster (1).jpeg" alt= "BluePrint resume poster"  onclick="openFullImg(this.src)">
+                </div>
 
-            
-                <img src="Images\graphic cv.png" alt= "Graphic designer resume" width="350" height="300">
-            
+               <p id="no-results" class="no-results">No designs found. Try another search.</p>
 
-            
-                <img src="Images\cover letter 2.png" alt= "Professional cover letter" width="350" height="300">
-        </div>
+<script>
+  var fullImgBox = document.getElementById("fullImgBox");
+  var fullImg = document.getElementById("fullImg");
 
+  function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
 
+  }
 
+  function closeFullImg(){
+    fullImgBox.style.display = "none";
 
+  }
+</script>
 
  </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br><br><br>
 
 <footer>
 
@@ -137,7 +140,7 @@
       <a href="contact us.html">Contact</a>
       <br><br>
     </p>
-    <p><b>Contact Info:</b> 083 285 7668/ 081 724 5112 | nellythabede@gmail.com | Midrand, South Africa</p>
+    <p><b>Contact Info:</b> 083 285 7668/ 081 724 5112 | nellythabede@gmail.com | 266 Pretorius St, Pretoria Central, Pretoria, 0002</p>
     <br>
     <p><b>Follow us:</b></p>
     <img class="footer-img" src="Images\instagram.png" width="25" height="25"/>&nbsp;&nbsp;

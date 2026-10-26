@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
    <link rel = 'stylesheet' href= "./style.css">
    <script src="validation.js" defer></script>
+
 </head>
 
   <header>
@@ -14,6 +15,11 @@
     <nav class="navbar">
     <span class="logo"><img src="Images\LOGO.jpg" alt="A blue fingerprint symbol sits beside the bold black text BLUEPRINT RESUMES, framed by a black rectangle on a white background." width="120"/></span>
         
+    <input class="nav-toggle" type="checkbox" id="nav-toggle">
+    <label class="nav-toggle-label" for="nav-toggle">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span></span><span></span><span></span>
+    </label>
     <span class="nav-links">
     <a href="index.html"> Home</a>
         <a href="about us.html"> About Us</a>
@@ -58,8 +64,19 @@
                       <label for="phone">Phone Number:</label>
                       <input class="form-input" type="tel" id="phone" name="phone"><br><br>
 
+                    <div class="form-group">
                        <label for="subject">Subject:</label>
-                       <input class="form-input" type="text" id="subject" name="subject" required><br><br>
+                       <select id="subject" name="subject" required>
+
+                       <option value="">Select an option</option>
+                       <option value="CV editing">CV editing</option>
+                       <option value="Professional CV">Professional CV</option>
+                       <option value="Cover letter">Cover letter</option>
+                       <option value="Professional CV & Cover Letter">Professional CV & Cover Letter</option>
+                       <option value="General Enquiry">General Enquiry</option>
+                       </select>
+                     </div>
+                
 
                        <label for="message">Message:</label><br>
                        <textarea class="form-group textarea" id="message" name="message" rows="5" cols="40" required></textarea><br><br>
@@ -67,7 +84,9 @@
                       <button type="submit" class="submit-button">Send Message</button>
                       </div>
                    </form>
-                   
+                 <p id="formMessage" class="form-message" aria-live="polite"></p>
+        
+
                 </div>
               </section>
         <br><br>
@@ -77,28 +96,35 @@
           <h2><b>Contact Information</b></h2>
           <br>
           <p>
-      <div class="contact-card">
+      <a href= "tel:+27832857668" class="contact-card">
 
-          <span class="icon-tile"><img src="Images\call.png" width="15" height="15"/></span>
+          <span class="icon-tile"><img src="Images\call.png" alt= Phone icon width="15" height="15"/></span>
       
-        <b>Phone:</b> 083 285 7668 <br> 
-                 081 724 5112
-      </div>
-      <br>
+        <b>Phone:</b> 083 285 7668</a> <br> 
+                 
+      </a>
+      <a href= "https://wa.me/27817245112" class="contact-card">
 
-   <div class="contact-card">
+          <span class="icon-tile"><img src="Images\whatsapp.png" alt= whatsapp icon width="19" height="19"/></span>
+      
+        <b>Whatsapp:</b> 081 724 5112<br> 
+                
+      </a>
+  
+
+   <a href= "https://mail.google.com/mail/?view=cm&fs=1&to=olwethumnisi137@gmail.com" class="contact-card">
      <span class="icon-tile"><img src="Images\mail.png" width="15" height="15"/></span>
      <b>Email:</b> nellythabede@gmail.com<br>
-     </div>
+   </a>
 
-       <br>
+       
 
     <div class="contact-card">
      <span class="icon-tile"><img src="Images\location-pin.png" width="15" height="15"/></span>
-     <b>Address:</b> Midrand, South Africa<br> 
+     <b>Address:</b> 266 Pretorius St, Pretoria Central, Pretoria, 0002<br> 
      </div>
 
-      <br>
+      
 
     <div class="contact-card">
       <span class="icon-tile"><img src="Images\clock.png" alt="Black analog clock face with hands showing about 4:20 on a plain white background." width="15" height="15"/></span>
@@ -108,10 +134,26 @@
   <br>
   <h3><b>Follow us</b></h3>
   
-    <img src="Images\instagram.png" width="35" height="35"/>
+    <a href= "https://www.instagram.com/blaque__honey/""><img src="Images\instagram.png" width="35" height="35"/></a>
 
   </section>
 
+<section class="location-section">
+
+    <div class="location-heading h1">
+        <h2>Find Us</h2>
+        <p>Visit us on the map below.</p>
+    </div>
+
+    <div class="map-container">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.6723313141806!2d28.188618575194717!3d-25.74834737736039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956210533599d9%3A0xd8b3278a609ac100!2s266%20Pretorius%20St%2C%20Pretoria%20Central%2C%20Pretoria%2C%200002!5e0!3m2!1sen!2sza!4v1792584942687!5m2!1sen!2sza" 
+     width="600" 
+     height="450" 
+     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        
+    </div>
+
+</section>
 </main>
 
   <footer>
@@ -130,7 +172,7 @@
       <a href="contact us.html">Contact</a>
       <br><br>
     </p>
-    <p><b>Contact Info:</b> 083 285 7668/ 081 724 5112 | nellythabede@gmail.com | Midrand, South Africa</p>
+    <p><b>Contact Info:</b> 083 285 7668/ 081 724 5112 | nellythabede@gmail.com | 266 Pretorius St, Pretoria Central, Pretoria, 0002</p>
     <br>
     <p><b>Follow us:</b></p>
     <img class="footer-img" src="Images\instagram.png" width="25" height="25"/>&nbsp;&nbsp;
