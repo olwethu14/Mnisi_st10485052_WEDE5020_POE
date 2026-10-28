@@ -422,7 +422,76 @@ body{
     border: none;
 }
 
+.success-box{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
 
+.success-box.show{
+    display: flex;
+}
+
+.success-card{
+    background-color: white;
+    border-radius: 16px;
+    padding: 32px 28px;
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    animation: popIn 0.25s ease-out;
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #1ac057;
+  font-size: 36px;
+  line-height: 64px;
+  font-weight: bold;
+}
+
+.success-card h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  color: #111827;
+}
+
+.success-card p {
+  margin: 0 0 20px;
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.form-error {
+  margin: 0 0 16px;
+  color: #b91c1c;
+}
+
+.success-card button {
+  border: none;
+  padding: 10px 28px;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.success-card button:hover {
+  background: #2563eb;
+}
 /*----FAQ----*/
 
 
@@ -735,6 +804,12 @@ body{
     font-weight: bold;
 }
 
+.text{
+    margin-left: 115px;
+    align-items: center;
+    position:absolute
+}
+
 
 /*----Home----*/
 
@@ -829,7 +904,7 @@ body{
     outline: 0;
     background: transparent;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     padding: 0 30px;
 }
 
@@ -896,6 +971,8 @@ body{
     padding: 15px 20px;
     margin: 0;
     color: #666;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -1213,7 +1290,6 @@ body{
     }
 }
 
-/*----Search engine----*/
 @media (max-width: 768px) {
     .gallery-search {
         width: 90%;
@@ -1236,28 +1312,3 @@ body{
 }
 
 
-@media (max-width: 480px) {
-    .gallery-search {
-        width: 94%;
-        margin-top: 30px;
-    }
-
-    .search {
-        height: 52px;
-    }
-
-    .search input {
-        padding: 0 14px;
-        font-size: 14px;
-    }
-
-    .search button {
-        width: 85px;
-        font-size: 14px;
-    }
-
-    .result-box li a {
-        padding: 10px 14px;
-        font-size: 14px;
-    }
-}

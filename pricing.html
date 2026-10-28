@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing</title>
+    <meta name="keywords" content="Cv packages, individual services, cv services prices">
+    <meta name="description" content="Explore Blueprint Resumes packages and pricing for professional Cv writing, Cv editing and cover letter services to suit your career needs.">
+    <title>Pricing | CV Writing Services & Pricing | BluePrint Resumes| </title>
    <link rel = 'stylesheet' href= "./style.css">
+    <sript src="validation.js" defer></sript>
 </head>
 <body>
 </body>
@@ -54,7 +57,7 @@
             <br>
             <p>A professionally written CV tailored<br> to your experience and<br> career goals.</p>
             <br>
-            <button class="grey-button"> <a href="contact us.html">Get a Quote</a></button>
+            <button class="grey-button" onclick="window.location.href='contact us.html?service=professional cv'"> Get a Quote</button>
           </div>
             
         
@@ -68,7 +71,7 @@
               <br>
               <p>Improve the wording, structure<br> and presentation of your<br> existing CV.</p>
               <br>
-              <button class="grey-button"> <a href="contact us.html">Get a Quote</a></button>
+              <button class="grey-button" onclick="window.location.href='contact us.html?service=cv editing'"> Get a Quote</button>
             </div>
     
 
@@ -81,7 +84,7 @@
                 <br>
                 <p>A personlised cover letter<br> designed to complement your CV.</p>
                 <br>
-               <button class="grey-button"> <a href="contact us.html">Get a Quote</a></button>
+               <button class="grey-button" onclick="window.location.href='contact us.html?service=cover letter'">Get a Quote</button>
                 </div>
       </section>
     
@@ -102,7 +105,7 @@
         - Cover Letter<br>
         - 1-3 Business Days<br></p>
         <br><br>
-        <button class="submit-button"> <a href="contact us.html">Choose Plan</a></button>
+        <button class="submit-button" onclick="window.location.href='contact us.html?package=basic'"> Choose Plan</button>
         </div>
         
         <div class="service-card">
@@ -114,7 +117,7 @@
         - Cover Letter<br>
         - 3-5 Business Days<br></p>
         <br><br>
-        <a href="contact us.html"><button class="submit-button"> Choose Plan</a></button>
+        <button class="submit-button" onclick="window.location.href='contact us.html?package=standard'"> Choose Plan</button>
         </div>
       
         <div class="service-card">
@@ -127,8 +130,9 @@
         - Cover Letter<br>
         - 5-7 Business Days<br></p>
         <br><br>
-        <button class="submit-button"> <a href="contact us.html">Choose Plan</a></button>
+        <button class="submit-button" onclick="window.location.href='contact us.html?package=premium'"> Choose Plan</button>
         </div>
+       
       </section>
      
    <div class="hero-faq">
@@ -136,7 +140,26 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="contact us.html"><button class="grey-button">Request a Quote</button></a></p>
    </div>
-        </main>
+
+   <script>
+  const params = new URLSearchParams(window.location.search);
+  const selectedPackage = params.get("package");
+  const message = document.getElementById("message");
+
+  if (message && selectedPackage) {
+    message.value = "Hi, I am interested in the " +
+        selectedPackage + " package. Please let me know what is required from me to get started.";
+  }
+
+    const selectedService = params.get("service");
+
+    if (message && selectedService) {
+    message.value = "Hi, I am interested in the " +
+      selectedService + " service. Please let me know what is required from me to get started.";
+  }
+  </script>
+
+</main>
 
 
 
@@ -160,8 +183,8 @@
     <p><b>Contact Info:</b> 083 285 7668/ 081 724 5112 | nellythabede@gmail.com | 266 Pretorius St, Pretoria Central, Pretoria, 0002</p>
     <br>
     <p><b>Follow us:</b></p>
-    <img class="footer-img" src="Images\instagram.png" width="25" height="25"/>&nbsp;&nbsp;
-    <img class="footer-img" src="Images\social.png" width="25" height="25"/>
+    <img class="footer-img" src="Images\instagram.png" alt="instagram logo" width="25" height="25"/>&nbsp;&nbsp;
+    <img class="footer-img" src="Images\social.png" alt="whatsapp logo" width="25" height="25"/>
     <br>
     <hr>
     <b><p align="center">&copy; 2026 Blueprint Resumes. All rights reserved.</p></b>
