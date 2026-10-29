@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ". Please let me know what is required from me to get started.";
   }
 
-  // Enquiry response
+  // Enquiry response message/card
   const enquiryForm = document.getElementById("myForm");
   if (enquiryForm) {
     const successBox = document.getElementById("success-box");
