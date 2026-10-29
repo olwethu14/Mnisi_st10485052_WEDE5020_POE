@@ -196,23 +196,48 @@ The development process included:
 10. Making the website responsive for different screen sizes.
 11. Testing the pages and correcting layout issues.
 12. Uploading and managing the project using GitHub.
-
----------------------------------------
-Changes Made
-
-1. Home page
-* removed the testimonial section.
-* added <sections> and <div>
-* Added comments to the HTML 
-
-2. CSS 
-* Created an External Stylesheet.
-* Set default styles for heading styles.
-* Applied typography styles.
-
----------------------------------------
+-----------------------------------------------------------------
 References
 W3Schools (2026) CSS Home. Available at: https://www.w3schools.com/css/default.asp (Accessed: 15 September 2026).
 Bro Code (2021) CSS Tutorial for beginners. YouTube. Available at: https://www.youtube.com/watch?v=xv-bBxaa7WU&list=PLZPZq0r_RZOONc3kkuRmBOlj67YAG6jqo (Accessed: 15 September 2026).
 >>>>>>> f5fe50bb9c022c14db3d1eb09cd602e6efbb92f1
+
+
+---------------------------------------
+**Part 3: WEDE POE**
+---------------------------------------
+
+# Feedback on part 2:
+* Improved CSS code
+* Improved layout structure.
+* Improved media queries and website is fully responsive.
+* Improved typography adjustment.
+* Improved navigation menu responsive design.
+* Image adjustments are complete and corrected.
+* Improved README Document.
+
+# ChangeLog:
+* Started my CSS all over again.
+* Changed the websites colours from **black, navy blue and white** to **white, whitesmoke, blue and gradient blue**.
+* Added a gallery page.
+* Changed the home pages hero banner and covered it with blue.
+* Added a gradient image in all the hero banners and other sections in the website.
+* Fixed the pricing page's table and applied CSS.
+
+# Javascript implementation
+* Added interactive elements such as responsive navigation bar, gallery search, form validation, enquiry process       response.
+* Included dynamic content and search feature.
+* Gallery Search engine for searching cv templates.
+* Included SEO title tags, meta keywords and description.
+* File name and Alt-text.
+* Package to message prefill.
+* Added an interactive map.
+
+# References
+* GreatStack. (2021). Youtube. https://www.youtube.com/watch?si=0ahwB29TT4UC-Z38&v=sHG3Sf6XN9g&feature=youtu.be. Accessed on 27/10/2026.
+* GreatStack. (2023). Youtube. https://www.youtube.com/watch?v=E4znbZgUWzA. Accessed on 25/10/2026.
+* Anthropic. (2025). Claude 4 Sonnet. https://claude.ai/. Accessed on 20/10/2026.
+* OpenAI. (2026). ChatGPT. https://chatgpt.com/ Accessed on 23/10/2026.
+
+
 
