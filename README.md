@@ -238,6 +238,9 @@ Bro Code (2021) CSS Tutorial for beginners. YouTube. Available at: https://www.y
 * GreatStack. (2023). Youtube. https://www.youtube.com/watch?v=E4znbZgUWzA. Accessed on 25/10/2026.
 * Anthropic. (2025). Claude 4 Sonnet. https://claude.ai/. Accessed on 20/10/2026.
 * OpenAI. (2026). ChatGPT. https://chatgpt.com/ Accessed on 23/10/2026.
+* GeeksforGeeks. (2025). https://www.geeksforgeeks.org/javascript/how-to-send-an-email-from-javascript/
+* Flaticon. (N/A). https://www.flaticon.com/search?word=cv&k=1792436295919&log-in=google
+* Canva. (N/A). https://www.canva.com/
 
 
 
