@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <meta name="keywords" content="CV templates, resume designs, professional CV examples">
+    <meta name="description" content="Browse the BluePrint Resumes gallery for professional CV templates, resume designs and examples to inspire your next job application.">
+    <title>Gallery | CV Templates Gallery | BluePrint Resumes| </title>
      <link rel = 'stylesheet' href="style.css">
-     <script src="validation.js" defer></script>
+      <sript src="validation.js" defer></sript>
 </head>
 
 <header>
@@ -44,30 +46,13 @@
            <br><br><br>
 
            <div>
-              <form id="search-form" class="search">
-              <input type="text" id="searchInput" placeholder="Search for a template..." autocomplete="off">
-              <button type="submit">Search</button>
-
-              <div class="result-box" id="resultBox">
-        <ul id="templateList">
-            <li>Creative CV</li>
-            <li>Professional CV</li>
-            <li>Functional CV</li>
-            <li>Interior Designer</li>
-            <li>Actor</li>
-            <li>Developer</li>
-            <li>Manager</li>
-            <li>Architect</li>
-            <li>Fashion Designer</li>
-            <li>Cover Letter</li>
-        </ul>
-
-        <p id="noResults">No templates found.</p>
-    </div>
+              <form id="search-form" class="search ">
+                <input type="text" id="searchInput" placeholder="Search for a template..." autocomplete="off">
+                <button type="submit">Search</button>  
               </form>
-              
-              
-             </div>
+           </div>
+
+  
             
 
              
@@ -79,7 +64,7 @@
       
 
                <div class="gallery-item">
-                <img src="Images\Actor cv.png" alt= "Creative resume design for a actor" onclick="openFullImg(this.src)">
+                <img src="Images\Actor cv.png" alt= "Creative actor resume " onclick="openFullImg(this.src)">
             
                 <img src="Images\cover letter 1.png" alt= "Professional cover letter"  onclick="openFullImg(this.src)">
               
@@ -102,22 +87,53 @@
                 <img src="Images\BR poster (1).jpeg" alt= "BluePrint resume poster"  onclick="openFullImg(this.src)">
                 </div>
 
-               <p id="no-results" class="no-results">No designs found. Try another search.</p>
+               <p id="no-results" class="p">No designs found. Try another search.</p>
 
 <script>
+
   var fullImgBox = document.getElementById("fullImgBox");
   var fullImg = document.getElementById("fullImg");
 
   function openFullImg(pic){
     fullImgBox.style.display = "flex";
     fullImg.src = pic;
-
-  }
+   }
 
   function closeFullImg(){
     fullImgBox.style.display = "none";
 
+   }
+
+   document.getElementById("no-results").style.display = "none";
+
+   const searchForm  = document.getElementById('search-form');
+  const input = document.getElementById('searchInput');
+  const galleryItems = document.querySelectorAll('.gallery-item img');
+  const noResults    = document.getElementById('no-results');
+
+  function runSearch(query) {
+    const q = query.trim().toLowerCase();
+    let visibleCount = 0;
+
+    galleryItems.forEach(img => {
+      const altText = (img.alt || '').toLowerCase();
+      const fileName = (img.src || '').toLowerCase();
+      const matches = !q || altText.includes(q) || fileName.includes(q);
+      img.style.display = matches ? '' : 'none';
+      if (matches) visibleCount++;
+    });
+
+    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
   }
+
+  searchForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    runSearch(input.value);
+  });
+
+  input.addEventListener('input', function() {
+    runSearch(input.value);
+  });
 </script>
 
  </main>
@@ -143,8 +159,8 @@
     <p><b>Contact Info:</b> 083 285 7668/ 081 724 5112 | nellythabede@gmail.com | 266 Pretorius St, Pretoria Central, Pretoria, 0002</p>
     <br>
     <p><b>Follow us:</b></p>
-    <img class="footer-img" src="Images\instagram.png" width="25" height="25"/>&nbsp;&nbsp;
-    <img class="footer-img" src="Images\social.png" width="25" height="25"/>
+    <img class="footer-img" src="Images\instagram.png" alt="instagram logo" width="25" height="25"/>&nbsp;&nbsp;
+    <img class="footer-img" src="Images\social.png" alt="whatsapp logo" width="25" height="25"/>
     <br>
     <hr>
     <b><p align="center">&copy; 2026 Blueprint Resumes. All rights reserved.</p></b>

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+     <meta name="keywords" content="Contact Blueprint Resumes, CV enquiries, Cv writing contact">
+    <meta name="description" content="Contact BluePrint Resumes to enquire about professional CV writing, Cv editing and cover ketter services for your next career opportunity.">
+    <title>Contact Us| Contact Details | BluePrint Resumes| </title>
    <link rel = 'stylesheet' href= "./style.css">
-   <script src="validation.js" defer></script>
-
+    <script src="validation.js" defer></script>
 </head>
 
   <header>
@@ -49,7 +50,7 @@
                      <h2>Send Us a Message</h2>  
                      <p class="form-description">Please fill out the form below and we will get back to you as soon as possible.</p>
 
-                     <form id="myForm">
+                     <form id="myForm" action="https://script.google.com/macros/s/AKfycby99hWdKl0yc5XnZfKydcThFgOBlE857FwyXVJdePObo6DuiuaxAvBvPZHg5Z4mpELFUQ/exec" method="POST">
                       <div class="form-row">
                       <div class="form-group">
                      <label for="name"> Full Name:</label>
@@ -79,15 +80,28 @@
                 
 
                        <label for="message">Message:</label><br>
-                       <textarea class="form-group textarea" id="message" name="message" rows="5" cols="40" required></textarea><br><br>
-                       
-                      <button type="submit" class="submit-button">Send Message</button>
-                      </div>
-                   </form>
-                 <p id="formMessage" class="form-message" aria-live="polite"></p>
-        
 
+                        <textarea class="form-group textarea" id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+                       <p id="form-error" class="form-error" role="alert" hidden></p>
+                       <button type="submit" class="submit-button">Send Message</button>
+                       </div>
+                       </div>
+                    </form>
+                   
+                    <div id="success-box" class="success-box" role="dialog" aria-modal="true" aria-labelledby="success-title" aria-hidden="true">
+                       <div class="success-card">
+                         <div class="success-icon" aria-hidden="true">✓</div>
+                         <h3 id="success-title">Thank You!</h3>
+                         <p>Your enquiry has been received. We will get back to you within <strong>2 working days</strong>.</p>
+                         <button id="close-success" class="submit-button">Close</button>
+                       </div>
+                    </div>
+
+                    
                 </div>
+
+            
               </section>
         <br><br>
 
@@ -175,8 +189,8 @@
     <p><b>Contact Info:</b> 083 285 7668/ 081 724 5112 | nellythabede@gmail.com | 266 Pretorius St, Pretoria Central, Pretoria, 0002</p>
     <br>
     <p><b>Follow us:</b></p>
-    <img class="footer-img" src="Images\instagram.png" width="25" height="25"/>&nbsp;&nbsp;
-    <img class="footer-img" src="Images\social.png" width="25" height="25"/>
+    <img class="footer-img" src="Images\instagram.png" alt="instagram logo" width="25" height="25"/>&nbsp;&nbsp;
+    <img class="footer-img" src="Images\social.png" alt="whatsapp logo" width="25" height="25"/>
     <br>
     <hr>
     <b><p align="center">&copy; 2026 Blueprint Resumes. All rights reserved.</p></b>
