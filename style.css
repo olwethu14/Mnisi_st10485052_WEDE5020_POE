@@ -1283,32 +1283,13 @@ body{
 
     footer {
         padding: 20px 16px;
+        position: static;
+        width: 100%;
     }
 
     footer p {
         overflow-wrap: anywhere;
     }
+
 }
-
-@media (max-width: 768px) {
-    .gallery-search {
-        width: 90%;
-        margin-top: 45px;
-    }
-
-    .search {
-        height: 60px;
-    }
-
-    .search input {
-        padding: 0 20px;
-        font-size: 16px;
-    }
-
-    .search button {
-        width: 120px;
-        font-size: 16px;
-    }
-}
-
 
